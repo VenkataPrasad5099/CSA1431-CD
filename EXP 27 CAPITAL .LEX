@@ -1,0 +1,18 @@
+%{
+%}
+
+%%
+
+[A-Z]+ {printf("%s",yytext);}
+. ;
+%%
+
+int yywrap( )
+{}
+
+int main( ) 
+{
+printf("Enter some string with capital words in between\n");
+yylex();
+}
+
